@@ -20,8 +20,8 @@ for f in factors:                       # For each factor
         if x not in multiples:          # If the multiple isn't already accounted for
             multiples.append(x)         # Add the multiple to the list
 
-for x in multiples:                     # For each multiple in the list
-    sum+=x                              # Add that multiple to the sum
+for m in multiples:                     # For each multiple in the list
+    sum+=m                              # Add that multiple to the sum
 
 print(sum)                              # Output the sum
 print(datetime.now() - startTime)       # Output the execution time
