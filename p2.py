@@ -12,15 +12,14 @@ from datetime import datetime
 startTime = datetime.now()
 
 ceiling = 4000000
-fibonacci = [0, 1]
+fibonacci = [0]
+term = 1
 sum = 0
 
 # Construct the Fibonacci sequence in a list.
-while fibonacci[len(fibonacci) - 1] < ceiling:
-    fibonacci.append(fibonacci[len(fibonacci) - 1] + fibonacci[len(fibonacci) - 2])
-
-# Remove the last element of the list because it exceeds our ceiling.
-fibonacci.remove(fibonacci[len(fibonacci) - 1])
+while term < ceiling:
+    fibonacci.append(term)
+    term = fibonacci[len(fibonacci) - 1] + fibonacci[len(fibonacci) - 2]
 
 # Add every 3rd term of the Fibonacci sequence starting at index 3, or element '2.'
 for s in range(3, len(fibonacci), 3):
