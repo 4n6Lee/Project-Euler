@@ -1,5 +1,5 @@
-#   Script:     p1.py
-#   Full:       Project Euler Problem 1 Solution
+#   Script:     p3.py
+#   Full:       Project Euler Problem 3 Solution
 #   Author:     Lee Terrell
 #   Website:    4n6Lee.com
 #
