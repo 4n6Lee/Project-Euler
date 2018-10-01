@@ -15,6 +15,8 @@ number = 600851475143
 primeFactors = []
 
 # Construct a list of odd factors of the given number
+# Note: I iterated through only odd numbers below the square root of the given number because the end result requires
+#       only prime numbers.
 for x in range(1, int(math.sqrt(number))+1, 2):
     if number % x == 0:
         if x not in primeFactors:
